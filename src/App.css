@@ -1,0 +1,119 @@
+@import "rsuite/dist/rsuite.css";
+
+.App {
+    font-family: sans-serif;
+    /* text-align: center; */
+    display: grid;
+}
+
+.switcher {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    /* margin-top: 8px; */
+    color: #2196f3;
+}
+
+.switcher-item {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 8px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: transparent;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.switcher-item:hover {
+    background-color: #f2f3f5;
+    color: #262b3e;
+}
+
+.switcher-active-item {
+    text-decoration: none;
+    cursor: default;
+    color: #262b3e;
+}
+
+.switcher-active-item,
+.switcher-active-item:hover {
+    background-color: #e1eff9;
+}
+
+.chart-group {
+    text-align: left;
+}
+
+.chart-group .chart-view {
+    margin: 0px;
+    display: flex;
+    float: left;
+    width: 605px;
+    height: 355px;
+    justify-content: center;
+	border: 2.5px solid rgba(20, 30, 40, 1);
+}
+
+.chart-group .actived-chart {
+	border-color: #2962ff;
+}
+
+.chart-view .infos {
+    color: white;
+    margin: 5px auto;
+    font-size: 11px;
+}
+
+.main-info {
+    color: red;
+    padding-left: 3px;
+    padding-right: 10px;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+}
+
+.preloader {
+    width: 100px;
+}
+
+.datetime-view {
+    padding: 5px 10px 5px 30px;
+    display: inline-flex;
+}
+
+.datetime-view h4 {
+    color: white;
+    padding-right: 5px;
+}
+
+.time-group {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.white {
+    color: white !important;
+}
+
+.chart-item {
+    position: relative;
+}
+
+.chart-infos {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.indicators.selected {
+    background-color: darkgray;
+}
